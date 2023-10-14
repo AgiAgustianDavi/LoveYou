@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>MAO GA?</title>
+        <style>
+            body {
+                text-align: center;
+                border: 10px solid rgb(228, 122, 139) ;
+                padding: 20px;
+                margin: 20px;
+                background-color: #FBF8F7;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Hai Cantik!</h1>
+        <img src="https://c.tenor.com/Z8ezUHZzcLoAAAAC/love.gif">
+        <h1>Maukah kamu menjadi pacarku?</h1>
+        <button id="btn_mau" style="position:absolute; left:45%; top:500px; width:60px; height:20px;" onclick="alert('CIL CIL, gak boleh pacaran! wkwk')">Mau</button>
+        <button id="btn_gamau" style="position:absolute; left:55%; top:500px; width:60px; height:20px;" onclick="gamau(btn_gamau)">Gamau</button>
+    </body>
+    <script>
+        function gamau(id){
+            var gamau = document.getElementById("btn_gamau");
+            var i = Math.floor(Math.random() * 300) + 300;
+            var j = Math.floor(Math.random() * 5) + gamau.offsetTop;
+            id.style.left = i + "px";
+            id.style.top = j + "px";
+        }
+    </script>
+</html>
+
+
